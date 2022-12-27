@@ -49,7 +49,9 @@
   <h2 class="!my-0 pb-1 !leading-none">{{ .Title }}</h2>
   <time class="text-sm opacity-60"
     >{{ .Date | time.Format ":date_medium" }}</time
-  >
+  > 
+  <span class="mx-1">&middot;</span>
+  <time class="text-sm opacity-60">زمان مطالعه {{ .ReadingTime }} دقیقه</time>
   <a class="absolute inset-0" href="{{ .Permalink }}"></a>
 </section>
 {{ end }}
@@ -58,12 +60,11 @@
 {{ if gt $paginator.TotalPages 1 }}
 <nav class="mt-24 flex">
   {{ if $paginator.HasPrev }}
-  <a class="btn" href="{{ $paginator.Prev.URL }}">← {{ i18n "prev_page" }}</a>
+  <a class="btn" href="{{ $paginator.Prev.URL }}">→ {{ i18n "prev_page" }}</a>
   {{ end }}<!---->
   {{ if $paginator.HasNext }}
-  <a class="btn ml-auto" href="{{ $paginator.Next.URL }}"
-    >{{ i18n "next_page" }} →</a
-  >
+  <a class="btn mr-auto" href="{{ $paginator.Next.URL }}"
+    >{{ i18n "next_page" }} ←</a>
   {{ end }}
 </nav>
 {{ end }}<!---->

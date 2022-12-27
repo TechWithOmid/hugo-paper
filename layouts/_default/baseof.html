@@ -11,7 +11,7 @@
 (print "linen"))) }}<!---->
 
 <!-- social_list -->
-{{ $social_params := slice "twitter" "github" "instagram" "mastodon" "rss" }}<!---->
+{{ $social_params := slice "twitter" "github" "instagram" "rss" }}<!---->
 {{ range $social_params }}<!---->
 {{ if isset site.Params . }}<!---->
 {{ $.Scratch.Add "social_list" (slice .) }}<!---->
@@ -23,11 +23,9 @@
 {{ if in site.Params.avatar "http" }}<!---->
 {{ $.Scratch.Set "avatar_url" site.Params.avatar }}<!---->
 {{ else }}<!---->
-{{ $official_cdn := "https://www.gravatar.com/avatar/" }}<!---->
-{{ $cdn := (site.Params.gravatarCdn | default $official_cdn) }}<!---->
 {{ $md5 := (md5 site.Params.avatar) }}<!---->
-{{ $avatar_url := print $cdn $md5 "?s=160&d=identicon" }}<!---->
-{{ $.Scratch.Set "avatar_url" $avatar_url }}<!---->
+{{ $url := print "https://www.gravatar.com/avatar/" $md5 "?s=160&d=identicon" }}<!---->
+{{ $.Scratch.Set "avatar_url" $url }}<!---->
 {{ end }}<!---->
 {{ end }}<!---->
 
@@ -35,6 +33,7 @@
   class="not-ready text-sm lg:text-base"
   style="--bg: {{ $.Scratch.Get `bg_color` }}"
   lang="{{ site.LanguageCode }}"
+  dir="rtl"
 >
   {{ partial "head.html" . }}
   <body class="text-black duration-200 ease-out dark:text-white">

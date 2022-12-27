@@ -12,12 +12,34 @@
       {{ if or .Params.Author site.Author.name }}
       <span class="mx-1">&middot;</span>
       <span>{{ .Params.Author | default site.Author.name }}</span>
+      <span class="mx-1">&middot;</span>
+      <time class="text-sm opacity-60">زمان مطالعه {{ .ReadingTime }} دقیقه</time>
       {{ end }}
     </div>
     {{ end }}
   </header>
 
   <section>{{ .Content }}</section>
+
+  {{- range first 1 (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) -}}
+  {{- $.Scratch.Set "has_related" true -}}
+{{- end -}}
+
+{{ if $.Scratch.Get "has_related" }}
+  <div class="related-content mt-24">
+      <h3>پست‌های مرتبط</h3>
+      <ul>
+          {{- $num_to_show := .Site.Params.related_content_limit | default 3 -}}
+          {{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+          <li>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              <br> 
+          </li>
+        {{ end }}
+      </ul>
+  </div>
+{{ end }}
+
 
   <!-- Post Tags -->
   {{ if .Params.tags }}
@@ -35,21 +57,19 @@
   <!-- Post Nav -->
   {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}<!---->
   {{ if and (gt (len $pages) 1) (in $pages . ) }}
-  <nav
-    class="mt-24 flex rounded-lg bg-black/[3%] p-1.5 text-lg dark:bg-white/[8%]"
-  >
-    {{ with $pages.Next . }}
-    <a
-      class="flex w-1/2 items-center rounded-md p-6 pr-3 no-underline hover:bg-black/[2%]"
-      href="{{ .Permalink }}"
-      ><span class="mr-1.5">←</span><span>{{ .Name }}</span></a
-    >
-    {{ end }}<!---->
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
     {{ with $pages.Prev . }}
     <a
-      class="ml-auto flex w-1/2 items-center justify-end rounded-md p-6 pl-3 no-underline hover:bg-black/[2%]"
+      class="flex w-1/2 items-center p-6 pr-3 no-underline"
       href="{{ .Permalink }}"
-      ><span>{{ .Name }}</span><span class="ml-1.5">→</span></a
+      ><span class="ml-1.5">→</span><span>{{ .Name }}</span></a
+    >
+    {{ end }}<!---->
+    {{ with $pages.Next . }}
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end p-6 pl-3 no-underline"
+      href="{{ .Permalink }}"
+      ><span>{{ .Name }}</span><span class="mr-1.5">←</span></a
     >
     {{ end }}
   </nav>
@@ -57,7 +77,7 @@
 
   <!-- Disqus -->
   {{ if and site.DisqusShortname (not (eq .Params.comments false)) }}
-  <div class="mt-24" id="disqus_thread"></div>
+  <div id="disqus_thread"></div>
   <script>
     const disqusShortname = '{{ site.DisqusShortname }}';
     const script = document.createElement('script');
