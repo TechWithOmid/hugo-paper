@@ -1,10 +1,13 @@
 +++
-title = "Contact"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["about-us", "about-hugo", "contact"]
-author = "lee.so"
+title = "تماس با من"
 +++
 
-- [github.com/nanxiaobei](https://github.com/nanxiaobei)
-- [lee.so](https://lee.so)
+<div dir="ltr">
+<p>
+    <a href="https://github.com/techwithomid">github.com/techwithomid</a>
+</p>
+<p>
+    <a href="mailto:omidmmadi@gmail.com">omidmmadi@gmail.com</a>
+</p>
+
+</div>

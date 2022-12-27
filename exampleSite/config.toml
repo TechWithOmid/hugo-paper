@@ -1,33 +1,27 @@
-baseURL = "https://hugo-paper.vercel.app/"
-# title = "Hugo Themes"
-author = "Steve Francia"
-copyright = "Copyright © 2008–2019, Steve Francia and the lee.so; all rights reserved."
+baseURL = "https://techwithomid.ir/"
+languageCode = "fa"
+DefaultContentLanguage = "fa"
+
+
+title = "کاغذ"
+author = "Omid"
+theme = "paper-rtl"
 paginate = 3
-languageCode = "en"
-DefaultContentLanguage = "en"
-enableInlineShortcodes = true
-# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
-# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
 ignoreErrors = ["error-remote-getjson"]
 
-# ------------------------------
-theme = "hugo-paper"
-title = "Paper"
+[outputs]
+  home = ["HTML", "RSS"]
 
 [params]
-  color = 'linen'
+  color = "linen"
 
-  twitter = 'nanxiaobei'
-  github = 'nanxiaobei'
-  instagram = 'nan.xiaobei'
+  github = "techwithomid"
+  instagram = "techwithomid"
 
-  avatar = 'nanxiaobei@gmail.com'
-  name = 'Lee'
-  bio = 'Discover fresh context'
+  avatar = 'omidmmadi@gmail.com'
+  name = "امید"
+  bio = "دست نوشته های یک برنامه نویس"
 
-# ------------------------------
-
-# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
@@ -37,12 +31,12 @@ title = "Paper"
 
   [[menu.main]]
     identifier = "about"
-    name = "About"
+    name = "درباره‌من"
     url = "/about/"
     weight = 10
   [[menu.main]]
     identifier = "contact"
-    name = "Contact"
+    name = "تماس با من"
     url = "/contact/"
     weight = 10
 

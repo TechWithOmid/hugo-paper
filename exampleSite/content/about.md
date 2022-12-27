@@ -1,25 +1,11 @@
 +++
-title = "About"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["about-us", "about-hugo", "contact"]
-author = "lee.so"
+title = "درباره من"
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+سلام. من امید محمدی هستم. علاقمند به کامپیوتر و الکترونیک.
 
-Hugo makes use of a variety of open source projects including:
+پایتون، جاوااسکریپت، سی و هرچیزی که لازم باشه رو یادمیگیرم و استفاده میکنم.
 
-- https://github.com/yuin/goldmark
-- https://github.com/alecthomas/chroma
-- https://github.com/muesli/smartcrop
-- https://github.com/spf13/cobra
-- https://github.com/spf13/viper
+من از 14 سالگی به برنامه نویسی و دنیای کامپیوتر علاقمند شدم و در دبیرستان وقتی خواستم که انتخاب رشته کنم، رشته ی کامپیوتر در محل زندگی من وجود نداشت پس به ناجار رشته ی الکترونیک رو برای تحصیل انتخاب کردم که رفته رفته به الکترونیک هم علاقمند شدم.
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+برای مدت های زیادی داشتن یه وبلاگ توی سرم بود و به نوشتن هم علاقه دارم و مدتی پیش که داشتم چالش 90 روز کد رو توی اینستاگرام انجام میدادم برای پروژه ی پایانی در نظر داشتم که یه وبلاگ با جنگو بالا بیارم که انجام دادم و حدود 2 ماه هم اون وبلاگ رو با همین دامین داشتم و داخلش چندین پست هم منتشر کردم، اما به دلایلی وبلاگ رو پایین آوردم و دوباره تصمیم گرفتم که یه وبلاگ داشته باشم اما اینبار با وردپرس که هم بتونم راحت تر بنویسم و هم اینکه بیشتر مشغول نوشتن و به اشتراک گذاشتن تجربیاتم باشم تا اضافه کردن قابلیت های جدید و دیباگ کردن کدها بلاگ ولی چون وردپرس مقداری الکی سنگین بود وحدودا ۴ ماهی این بلاگ با وردپرس بود و الان به hugo سویچ کردم که سرعت عالی و هاستینگ رایگان راضی نگهم داشته تا ببینیم چی میشه.

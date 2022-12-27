@@ -1,82 +1,58 @@
-+++
-author = "lee.so"
-title = "Markdown Syntax Guide"
-date = "2019-03-11"
-description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags = [
-    "markdown",
-    "css",
-    "html",
-]
-categories = [
-    "themes",
-    "syntax",
-]
-series = ["Themes Guide"]
-aliases = ["migrate-from-jekyl"]
-+++
+---
+title: "آموزش کار با Markdown"
+date: 2022-12-28T01:44:07+03:30
+draft: false
+tags:
+  - "قالب"
+  - "markdown"
+  - "سینتکس"
+  
+categories:
+   - "قالب‌ها"
+   - "سینتکس"
+---
+این مقاله نمونه ای از نحو اصلی Markdown را ارائه می دهد که می تواند در فایل های محتوای Hugo استفاده شود، همچنین نشان می دهد که آیا عناصر اصلی HTML با CSS در یک موضوع Hugo تزئین شده اند یا خیر.
 
-This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+## سر فصل ها
+در این بخش میتوانید سر فصل های `h1` تا `h6` رو ببینید.
+به صورتی که `h1` در بالاترین سطح و `h6` در پایین ترین سطح قرار دارد
+# تیتر 1
+## تیتر 2
+### تیتر 3
+#### تیتر 4
+##### تیتر 5
+###### تیتر 6
 
-<!--more-->
+## پاراگراف
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد.
 
-## Headings
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+## نقل قول
+عنصر blockquote محتوایی را نشان می دهد که از منبع دیگری نقل شده است، به طور اختیاری با یک نقل قول که باید در یک footerیا citeعنصر باشد، و به صورت اختیاری با تغییرات درون خطی مانند حاشیه نویسی و اختصارات.
 
-# H1
+#### نقل قول بدون ذکر منبع
+>> سپس، برای ضراب کردن آندائپو، دانشی که باید داده شود، بر اساس آن قطع می شود. توجه داشته باشید که می توانید از دستور Markdown در یک بلوک نقل قول استفاده کنید.
 
-## H2
+#### بلوک نقل قول با ذکر منبع
+> با اشتراک گذاری حافظه ارتباط برقرار نکنید، با برقراری ارتباط، حافظه را به اشتراک بگذارید.
+<br>
+> — <cite>راب پایک</cite>
 
-### H3
-
-#### H4
-
-##### H5
-
-###### H6
-
-## Paragraph
-
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
-
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
-
-## Blockquotes
-
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
-
-#### Blockquote without attribution
-
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-
-#### Blockquote with attribution
-
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Tables
-
-Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
-
-| Name  | Age |
+## جداول
+جداول بخشی از مشخصات اصلی Markdown نیستند، اما Hugo از آنها پشتیبانی می کند.
+| نام  | سن |
 | ----- | --- |
-| Bob   | 27  |
-| Alice | 23  |
+| باب   | 27  |
+| آلیس | 23  |
 
-#### Inline Markdown within tables
-
+#### علامت گذاری درونی در جداول
 | Italics   | Bold     | Code   |
 | --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
+| _کج_ | **توپر** | `code` |
 
-## Code Blocks
-
-#### Code block with backticks
-
+## بلوک های کد
+#### بلوک کد با بکتیک
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -89,9 +65,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
   </body>
 </html>
 ```
-
-#### Code block indented with four spaces
-
+#### بلوک کد دارای چهار فاصله است
     <!doctype html>
     <html lang="en">
     <head>
@@ -103,8 +77,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
     </body>
     </html>
 
-#### Code block with Hugo's internal highlight shortcode
-
+#### بلوک کد با کد کوتاه برجسته داخلی هوگو
 {{< highlight html >}}
 
 <!doctype html>
@@ -119,38 +92,32 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 </html>
 {{< /highlight >}}
 
-## List Types
+## انواع لیست
+#### فهرست مرتبشده
+1. مورد اول
+2. مورد دوم
+3. مورد سوم
+#### لیست نامرتب
+- موردی از فهرست
+- موردی دیگر از فهرست
+- و یک مورد دیگر از فهرست
+#### لیست تو در تو
+- میوه
+  - سیب
+  - پرتغال
+  - موز
+- لبنیات
+  - شیر
+  - پنیر
 
-#### Ordered List
-
-1. First item
-2. Second item
-3. Third item
-
-#### Unordered List
-
-- List item
-- Another item
-- And another item
-
-#### Nested list
-
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+## سایر عناصر - abbr، sub، sup، kbd، mark
+<abbr title="Graphics Interchange Format">GIF</abbr> یک فرمت تصویر بیت مپ است.
 
 H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
+برای پایان دادن به جلسه کلید های  <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> رو فشار بدید.
 
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+ اکثر <mark>سمندر</mark> هاشب‌زی هستند و حشرات، کرم‌ها و دیگر موجودات کوچک را شکار می‌کنند.
+
