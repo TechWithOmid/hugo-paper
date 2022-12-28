@@ -5,9 +5,8 @@
     یک قالب ساده، سریع و انعطاف پذیز برای Hugo
     </small>
 </div>
-<p>
+<br/>
 فورک راستچین و مناسب زبان فارسی قالب <a href="https://github.com/nanxiaobei/hugo-paper">Paper</a>
-</p>
 
 ## نصب
 داخل پروژه‌ی Hugo خود دستور زیر را اجرا کنید:
