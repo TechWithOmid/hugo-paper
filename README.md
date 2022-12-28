@@ -21,6 +21,8 @@ theme = "paper-rtl"
 ```
 برای اطلاعات بیشتر به <a href="https://gohugo.io/getting-started/quick-start/#step-3-add-a-theme">مستندات Hugo</a> مراجعه کنید.
 ## گزینه ها
+پیشنهاد می‌شود که از فایل `config.toml` بخش `exampleSite` استفاده کنید و مقادیر را به دلخواه تغییر دهید.
+
 گزینه های قابل ارائه در `config.toml`:
 </div>
 
