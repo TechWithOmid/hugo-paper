@@ -1,8 +1,8 @@
 {
-  "name": "hugo-paper",
-  "version": "6.4.0",
-  "repository": "https://github.com/nanxiaobei/hugo-paper.git",
-  "author": "nanxiaobei <nanxiaobei@gmail.com>",
+  "name": "hugo-paper-rtl",
+  "version": "1.0.0",
+  "repository": "https://github.com/techwithomid/hugo-paper-rtl.git",
+  "author": "omid <omidmmadi@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
