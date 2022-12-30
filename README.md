@@ -2,9 +2,17 @@
 <div dir="rtl">
 <div align="center">
     <small>
+    <p>
     یک قالب ساده، سریع و انعطاف پذیز برای Hugo
+    </p>
+    </small>
+    <small>
+    <p>
+        <a href="https://techwithomid.github.io/paper-rtl-demo">مشاهده دمو</a>
+    </p>
     </small>
 </div>
+<br/>
 <br/>
 فورک راستچین و مناسب زبان فارسی قالب <a href="https://github.com/nanxiaobei/hugo-paper">Paper</a>
 
