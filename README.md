@@ -16,6 +16,12 @@
 <br/>
 فورک راستچین و مناسب زبان فارسی قالب <a href="https://github.com/nanxiaobei/hugo-paper">Paper</a>
 
+## پیش نمایش
+![paper-rtl light](images/screenshot-light.png)
+![paper-rtl dark](images/screenshot-dark.png)
+![paper-rtl mobile](images/mobile.png)
+
+
 ## نصب
 داخل پروژه‌ی Hugo خود دستور زیر را اجرا کنید:
 
