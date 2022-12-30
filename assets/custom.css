@@ -1,1 +1,14 @@
 /* Place custom css here. */
+@font-face {
+    font-family: 'Vazirmatn';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../static/fonts/vazirmatn-regular.ttf');
+    src: local(''),
+         url('../static/fonts/vazirmatn-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../static/fonts/vazirmatn-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  }
+
+body {
+    font-family: 'Vazirmatn';
+}
