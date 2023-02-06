@@ -71,7 +71,5 @@ disqusShortname = 'YOUR_DISQUS_SHORTNAME'   # add disqus comments
 ## لیست کارها
 - اضافه کردن README انگلیسی
 - منتشر کردن قالب در hugo theme
-- اضافه کردن دکمه رفتن به بالای صفحه
-- اضافه کردن اسکرین شات های جدید
 
 </div>
